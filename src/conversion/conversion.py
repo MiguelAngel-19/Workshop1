@@ -3,89 +3,20 @@ class Conversion:
         return (celsius * (9/5)) + 32
     
     def fahrenheit_a_celsius(self, fahrenheit):
-        """
-        Convierte temperatura de Fahrenheit a Celsius.
-        
-        Args:
-            fahrenheit (float): Temperatura en grados Fahrenheit
-            
-        Returns:
-            float: Temperatura en grados Celsius
-            
-        Fórmula: C = (F - 32) × 5/9
-        
-        Ejemplo:
-            fahrenheit_a_celsius(32) -> 0.0
-            fahrenheit_a_celsius(212) -> 100.0
-        """
-        pass
+        return (fahrenheit - 32) * (5/9)
     
     def metros_a_pies(self, metros):
-        """
-        Convierte distancia de metros a pies.
-        
-        Args:
-            metros (float): Distancia en metros
-            
-        Returns:
-            float: Distancia en pies
-            
-        Factor: 1 metro = 3.28084 pies
-        
-        Ejemplo:
-            metros_a_pies(1) -> 3.28084
-        """
-        pass
+        return metros * 3.28084
     
     def pies_a_metros(self, pies):
-        """
-        Convierte distancia de pies a metros.
-        
-        Args:
-            pies (float): Distancia en pies
-            
-        Returns:
-            float: Distancia en metros
-            
-        Factor: 1 pie = 0.3048 metros
-        
-        Ejemplo:
-            pies_a_metros(3.28084) -> 1.0
-        """
-        pass
+        return pies * 0.3048
     
     def decimal_a_binario(self, decimal):
-        """
-        Convierte un número decimal a su representación binaria.
-        
-        Args:
-            decimal (int): Número decimal (positivo)
-            
-        Returns:
-            str: Representación binaria como string
-            
-        Ejemplo:
-            decimal_a_binario(10) -> "1010"
-            decimal_a_binario(255) -> "11111111"
-        """
-        pass
+        return bin(decimal)[2:]
     
     def binario_a_decimal(self, binario):
-        """
-        Convierte un número binario a decimal.
-        
-        Args:
-            binario (str): Representación binaria como string
-            
-        Returns:
-            int: Número decimal
-            
-        Ejemplo:
-            binario_a_decimal("1010") -> 10
-            binario_a_decimal("11111111") -> 255
-        """
-        pass
-    
+        return int(binario,2)
+
     def decimal_a_romano(self, numero):
         """
         Convierte un número decimal a numeración romana.
