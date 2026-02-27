@@ -14,17 +14,12 @@ class Games:
             return "jugador2"
 
     def adivinar_numero_pista(self, numero_secreto, intento):
-        """
-        Proporciona pistas para un juego de adivinanza de números.
-        
-        Args:
-            numero_secreto (int): El número que se debe adivinar
-            intento (int): El número propuesto por el jugador
-            
-        Returns:
-            str: "correcto", "muy alto" o "muy bajo"
-        """
-        pass
+        if numero_secreto == intento:
+            return "correcto"
+        elif numero_secreto > intento:
+            return "muy bajo"
+        else:
+            return "muy alto"
     
     def ta_te_ti_ganador(self, tablero):
         """
