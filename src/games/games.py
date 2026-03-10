@@ -61,5 +61,3 @@ class Games:
                 if tablero[fila][desde_col] is not None:
                     return False
             return True
-
-    # Si no es ni h
