@@ -52,7 +52,7 @@ class Games:
             
         Returns:
             list: Combinación de colores de la longitud especificada
-            
+         mmaamamam   
         Ejemplo:
             generar_combinacion_mastermind(4, ["rojo", "azul", "verde"]) 
             -> ["rojo", "azul", "rojo", "verde"]
