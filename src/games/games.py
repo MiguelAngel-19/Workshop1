@@ -1,3 +1,4 @@
+import random
 class Games:
     def piedra_papel_tijera(self, jugador1, jugador2):
         reglas = {
@@ -43,21 +44,8 @@ class Games:
         return "empate"
     
     def generar_combinacion_mastermind(self, longitud, colores_disponibles):
-        """
-        Genera una combinación aleatoria para el juego Mastermind.
-        
-        Args:
-            longitud (int): Número de posiciones en la combinación
-            colores_disponibles (list): Lista de colores disponibles
-            
-        Returns:
-            list: Combinación de colores de la longitud especificada
-         mmaamamam   
-        Ejemplo:
-            generar_combinacion_mastermind(4, ["rojo", "azul", "verde"]) 
-            -> ["rojo", "azul", "rojo", "verde"]
-        """
-        pass
+        combinacion = [random.choice(colores_disponibles) for _ in range(longitud)]
+        return combinacion
     
     def validar_movimiento_torre_ajedrez(self, desde_fila, desde_col, hasta_fila, hasta_col, tablero):
         """
